@@ -286,24 +286,25 @@ od;
 打印成
 ```
 do
-    branch
-        les
-            varref y
-            intconst 10
-        assign
-            varref y
-            add
+    branches
+        branch
+            les
                 varref y
-                intconst 1
-    branch
-        les
-            varref x
-            intconst 10
-        assign
-            varref x
-            add
+                intconst 10
+            assign
+                varref y
+                add
+                    varref y
+                    intconst 1
+        branch
+            les
                 varref x
-                intconst 1
+                intconst 10
+            assign
+                varref x
+                add
+                    varref x
+                    intconst 1
 ```
 
 ## 新增表达式优先级
