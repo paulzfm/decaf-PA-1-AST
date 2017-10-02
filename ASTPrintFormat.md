@@ -78,7 +78,7 @@ assign
 
 整数转复数函数`#<expr>`打印为
 ```
-im
+compcast
     <expr>
 ```
 如
